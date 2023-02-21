@@ -1,0 +1,271 @@
+body { 
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    min-width: 300px;
+    min-height: 500px;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .tablink {
+    background-color: #555;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+
+  
+  #allDevices {
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+  }
+
+  #hall {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+  }
+
+
+  .addFileImg {
+    background: rgba(0,0,0,0);
+    width: 100px;
+    margin-left: calc((100% - 100px)/2);
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+
+
+  .deviceNotFound {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    opacity: 0.5;
+  }
+  
+  
+  .addDevice {
+    background-color:  rgb(255, 62, 37);
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 20px;
+  }
+
+  .threeDots {
+    height: 40px;
+    width: 40px;
+  }
+
+  #kidsRoom {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;;
+  }
+
+  #livingRoom {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+  }
+
+.nav-home {
+    appearance: none;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border: black;
+}
+
+
+
+.refresh {
+    position: fixed;
+    right: 50px;
+    top: 7px;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.plus {
+  position: fixed;
+  right: 10px;
+  top: 7px;
+  border-radius: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+
+.home {
+    color: black;
+}
+
+.weather {
+    background-image: url("images/smarthome.webp");
+    opacity: 0.8;
+    border: 0.5px solid black;
+    height: calc(100vh/12*2);
+    color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 10%;
+}
+
+
+.welcome {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 200%;
+  color: black;
+}
+
+
+.smarthome {
+  width: 50px;
+}
+
+
+.tabcontent {
+  color: white;
+  height: 100%;
+  font-size: 1;
+  margin-bottom: 50%;
+  padding-bottom: 50%;
+}
+
+
+#footer ul {
+  padding: 0;
+}
+
+#footer ul li {
+  list-style: none;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  margin-top: -10px;
+}
+
+#footer ul li span {
+  display: block;
+  font-size: 10px;
+  margin-top: -5px;
+}
+
+.hhh {
+  background-color: #333;
+}
+
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  color: white;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+
+.threeDots {
+  height: 80%;
+  width: 20px;
+  background: rgba(0,0,0,0);
+}
+
+.but {
+  position: relative;
+  top: 8px;
+  right: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hi {
+  height: fit-content;
+  width: fit-content;
+  font-size: 100%;
+  color: black;
+  padding-top: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.hey1 {
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 2%;
+}
+
+.hey2 {
+  color: black;
+  padding: 2%;
+}
+
+.hey1:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hey2:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.no {
+  border-bottom: 1px white;
+}
+
+.yes:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.saba {
+  visibility: visible;
+  height: 70px;
+}
+
+.gg {
+  height: 60px;
+  width: 60px;
+  margin-left: calc((100% - 60px)/2);
+}
+
+
+.gg:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.homepage {
+  background-color: rgb(255, 38, 0);
+}

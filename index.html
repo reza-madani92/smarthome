@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f119b834a4.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid justify-content-center">
+          <div class="col-6 justify-content-start">
+            <select class="selectpicker nav-home bg-dark col-1">
+              <option>Home</option>
+              <option>Villa</option>
+              <option>Company</option>
+            </select>
+          </div>
+          <div class="col-6 justify-content-end d-flex">
+            <div class="col-1">  
+              <a href="#" role="button" class="refresh"><img class="refresh" src="images/refresh.png" alt=""></a>
+            </div>
+            <div class="col-1">  
+              <a href="#" role="button" class="plus"><img class="plus" src="images/plus.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="weather">
+    </div>
+
+
+
+
+    <div class="hhh d-flex">
+      <div class="scrollmenu col-10">
+        <a onclick="openPage('allDevices', this)" id="defaultOpen">All Devices</a>
+        <a onclick="openPage('hall', this)">Hall</a>
+        <a onclick="openPage('kidsRoom', this)">Kids Room</a>
+        <a onclick="openPage('livingRoom', this)">Living Room</a>
+        
+
+      </div>
+      <div class="col-2 justify-content-end d-flex">
+        <div class="dropdown but">
+          <button class="btn" type="button" data-bs-toggle="dropdown">
+            <img src="images/threedots.png" class="threeDots" alt="">
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu hi">
+            <li class="hey1"><a>Room Management</a></li>
+            <li class="hey2"><a>Home Management</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+
+      
+      <div id="allDevices1" class="tabcontent">
+        <img src="images/addfile.jpg" alt="" class="addFileImg img-responsive">
+        <div class="deviceNotFound">Device not available, please add</div>
+        <button class="addDevice btn btn-danger">Add Device</button>
+      </div>
+
+
+
+    <div id="allDevices" class="tabcontent">
+      <ul class="list-group">
+        <li class="list-group-item yes"><a>Gas Stove</a></li>
+        <li class="list-group-item yes"><a>Device 1</a></li>
+        <li class="list-group-item yes"><a>Device 2</a></li>
+        <li class="list-group-item yes"><a>Device 3</a></li>
+        <li class="list-group-item no"><a> </a></li>
+        <li class="list-group-item no"><a> </a></li>
+        <li class="list-group-item no"><a> </a></li>
+        <li class="list-group-item no"><a> </a></li>
+        <li class="list-group-item no"><a> </a></li>
+      </ul>
+    </div>
+      
+      <div id="hall" class="tabcontent">
+        <img src="images/addfile.png" alt="" class="addFileImg img-responsive">
+        <div class="deviceNotFound">Device not available, please add</div>
+        <button class="addDevice btn btn-danger">Add Device</button>
+      </div>
+      
+      <div id="kidsRoom" class="tabcontent">
+        <img src="images/addfile.png" alt="" class="addFileImg img-responsive">
+        <div class="deviceNotFound">Device not available, please add</div>
+        <button class="addDevice btn btn-danger">Add Device</button>
+      </div>
+      
+      <div id="livingRoom" class="tabcontent">
+        <img src="images/addfile.png" alt="" class="addFileImg img-responsive">
+        <div class="deviceNotFound">Device not available, please add</div>
+        <button class="addDevice btn btn-danger">Add Device</button>
+      </div>
+      
+      <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    
+    
+    <nav class="navbar navbar-expand-sm bg-dark text-white fixed-bottom saba">
+        <div class="container-fluid justify-content-center">
+            <div class="col-3">  
+                <a href="#" role="button"><img class="gg homepage" src="images/home.png" alt=""></a>
+            </div>
+            <div class="col-3 offset-1">  
+                <a href="#" role="button"><img class="gg" src="images/smart.png" alt=""></a>
+            </div>
+            <div class="col-3 offset-1">  
+                <a href="#" role="button"><img class="gg" src="images/user.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f119b834a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
