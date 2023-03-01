@@ -3,6 +3,7 @@ body {
     padding-bottom: 40px;
     min-width: 300px;
     min-height: 500px;
+    background-color: rgb(24, 24, 24);
 }
 
 
@@ -90,32 +91,80 @@ body, html {
 }
 
 
-a:link { 
-  text-decoration: none;
-  color: black;
+.topnav {
+  height: 40px;
+}
+
+
+.gasstovetext {
+  position: absolute;
+  width: 80px;
+  height: fit-content;
+  white-space: nowrap;
+  top: -13px;
+  left: calc((100% - 40px)/2);
+}
+
+
+.kj {
+  position: relative;
+}
+
+
+
+.gas {
+  height: 120%;
+  background-color: rgb(24, 24, 24);
+}
+
+
+.gas-img {
+  width: 50%;
+  margin-left: 25%;
+  height: auto;
+  margin-bottom: 70px;
+  background-color: rgb(24, 24, 24);
+}
+
+
+.oven-panel {
+  width: 50%;
+  margin-left: 25%;
+  height: auto;
+  margin-top: 100px;
+  background-image: linear-gradient(to right, rgb(24,24,24), rgb(95, 90, 90));
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+  padding: 15px;
+}
+
+
+.sure {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .gas-img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
+}
 
-
-a:visited { 
-  text-decoration: none;
-  color: black;
- }
-
-
-a:hover { 
-  text-decoration: none;
-  color: black;
+@media only screen and (max-width: 1000px) {
+  .oven-panel {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 
-a:active { 
-  text-decoration: none;
-  color: black;
-}
-
-.refresh {
+.back {
     position: fixed;
-    right: 50px;
+    left: 10px;
     top: 7px;
     height: 25px;
     width: 25px;
@@ -274,19 +323,131 @@ div.scrollmenu a:hover {
 
 .saba {
   visibility: visible;
-  height: 70px;
+  width: 90%;
+  margin-left: 5%;
+  height: 50px;
+  background-color: rgb(24, 24, 24);
+  margin-bottom: 80px;
+}
+
+.saba1 {
+  visibility: visible;
+  width: 90%;
+  margin-left: 5%;
+  height: 50px;
+  background-color: rgb(24, 24, 24);
+  margin-bottom: 100px;
 }
 
 .gg {
-  height: 60px;
-  width: 60px;
-  margin-left: calc((100% - 60px)/2);
+  height: 50px;
+  width: 50px;
+  margin-top: calc((100% - 100px)/2);
+  margin-left: calc((100% - 50px)/2);
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
 }
 
+
+.gg1 {
+  height: 50px;
+  width: 50px;
+  margin-top: calc((100% - 100px)/2);
+  margin-left: calc((100% - 50px)/2);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.gg1:active {
+  box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
+
+.gg1:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+.gg2 {
+  height: 50px;
+  width: 50px;
+  margin-top: calc((100% - 100px)/2);
+  margin-left: calc((100% - 50px)/2);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.gg2:active {
+  box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
+
+.gg2:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+.xx {
+  height: 30px;
+  width: 30px;
+  margin-left: calc((100% - 40px)/2);
+}
+
+
+.zz {
+  height: 70px;
+  width: 70px;
+  margin-left: calc((100% - 70px)/2);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+.rr1{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.rr2{
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.zz:active {
+  box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
+
+.zz:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.gg:active {
+  box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
+  transform: translateY(4px);
+}
 
 .gg:hover {
   border: 1px solid rgb(255, 255, 255);
 }
+
+
 
 .homepage {
   background-color: rgb(255, 38, 0);
