@@ -7,99 +7,279 @@ body {
 
 
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
+  background-color: rgb(240, 240, 240);
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.body {
+  height: 100%;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
+  visibility: hidden;
+}
+
+
+.left {
+  animation-name: slideFromLeft;
+}
+
+.same {
+  animation-name: fadeOut;
+}
+
+
+
+@keyframes slideFromLeft {
+  from {
+    margin-top: 100%;
+    opacity: 0;
   }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
   
-  .tablink {
-    background-color: #555;
-    color: rgb(0, 0, 0);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
-
-  
-  #allDevices {
-    background-color: rgb(255, 255, 255);
-    padding-top: 5px;
-  }
-
-  #hall {
-    background-color: rgb(255, 255, 255);
-    padding-top: 100px;
-  }
-
-
-  .addFileImg {
-    background: rgba(0,0,0,0);
-    width: 100px;
-    margin-left: calc((100% - 100px)/2);
-    margin-bottom: 30px;
-    opacity: 0.5;
-  }
-
-
-  .deviceNotFound {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 15px;
-    opacity: 0.5;
-  }
-  
-  
-  .addDevice {
-    background-color:  rgb(255, 62, 37);
-    border-radius: 20px;
-    width: fit-content;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    font-size: 20px;
-  }
-
-  .threeDots {
-    height: 40px;
-    width: 40px;
-  }
-
-  #kidsRoom {
-    background-color: rgb(255, 255, 255);
-    padding-top: 100px;;
-  }
-
-  #livingRoom {
-    background-color: rgb(255, 255, 255);
-    padding-top: 100px;
-  }
 
 .nav-home {
-    appearance: none;
-    width: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    border: black;
+  background-color: white;
+  appearance: none;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(32, 32, 32);
+  border: white;
 }
+
+
+.refresh {
+  position: fixed;
+  right: 50px;
+  top: 7px;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+}
+
+.plus {
+position: fixed;
+right: 10px;
+top: 7px;
+border-radius: 20px;
+height: 25px;
+width: 25px;
+}
+
+
+.weather {
+  background-image: url("images/weather.jpg");
+  opacity: 1.5;
+  height: calc(100vh/12*2);
+  color: white;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+
+.cloud {
+  height: 70px;
+  width: 70px;
+}
+
+.air {
+  position: relative;
+  bottom: 0px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+
+
+.tabbar {
+  background-color:  rgb(240, 240, 240);
+}
+
+
+div.scrollmenu {
+  background-color:  rgb(240, 240, 240);
+  overflow: auto;
+  white-space: nowrap;
+  color: rgb(32, 32, 32);
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: rgb(32, 32, 32);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+div.scrollmenu a:hover {
+  /*border-bottom: 2px solid rgb(32, 32, 32);*/
+  cursor: pointer;
+}
+
+
+.threeDots {
+  height: 80%;
+  width: 20px;
+  background: rgba(0,0,0,0);
+}
+
+.more {
+  position: relative;
+  top: 8px;
+  right: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.morelist {
+  height: fit-content;
+  width: fit-content;
+  font-size: 100%;
+  color: black;
+  padding-top: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+.moreitem1 {
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 2%;
+}
+
+.moreitem2 {
+  color: black;
+  padding: 2%;
+}
+
+.moreitem1:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.moreitem2:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+  
+#allDevices {
+  background-color: rgb(240, 240, 240);
+  padding-top: 5px;
+}
+
+#hall {
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;
+  display: none;
+}
+
+#kidsRoom {
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;;
+  display: none;
+}
+
+#livingRoom {
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;
+  display: none;
+}
+
+
+.addFileImg {
+  background: rgba(0,0,0,0);
+  width: 90px;
+  margin-left: calc((100% - 90px)/2);
+  margin-bottom: 30px;
+  opacity: 0.2;
+}
+
+
+.deviceNotFound {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+  opacity: 0.3;
+}
+  
+  
+.addDevice {
+  background-color:  rgb(255, 60, 0);
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 13px;
+  color: white;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.tabcontent {
+  color: white;
+  height: 100%;
+  font-size: 1;
+  margin-bottom: 50%;
+  padding-bottom: 50%;
+  left: 0;
+  animation: slide 0.5s ease;
+}
+
+
+@keyframes slide {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
 
 
 a:link { 
   text-decoration: none;
   color: black;
-  }
+}
 
 
 a:visited { 
   text-decoration: none;
   color: black;
- }
+}
 
 
 a:hover { 
@@ -113,181 +293,79 @@ a:active {
   color: black;
 }
 
-.refresh {
-    position: fixed;
-    right: 50px;
-    top: 7px;
-    height: 25px;
-    width: 25px;
-    border-radius: 20px;
-}
-
-.plus {
-  position: fixed;
-  right: 10px;
-  top: 7px;
-  border-radius: 20px;
-  height: 25px;
-  width: 25px;
-}
 
 
-.home {
-    color: black;
-}
-
-.weather {
-    background-image: url("images/smarthome.webp");
-    opacity: 0.8;
-    border: 0.5px solid black;
-    height: calc(100vh/12*2);
-    color: white;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    padding: 10%;
-}
-
-
-.welcome {
-  width: 80%;
-  margin-left: 10%;
-  font-size: 200%;
-  color: black;
-}
-
-
-.smarthome {
-  width: 50px;
-}
-
-
-.tabcontent {
-  color: white;
-  height: 100%;
-  font-size: 1;
-  margin-bottom: 50%;
-  padding-bottom: 50%;
-}
-
-
-#footer ul {
-  padding: 0;
-}
-
-#footer ul li {
-  list-style: none;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  margin-top: -10px;
-}
-
-#footer ul li span {
-  display: block;
-  font-size: 10px;
-  margin-top: -5px;
-}
-
-.hhh {
-  background-color: #333;
-}
-
-
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  color: white;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-  cursor: pointer;
-}
-
-
-.threeDots {
-  height: 80%;
-  width: 20px;
-  background: rgba(0,0,0,0);
-}
-
-.but {
-  position: relative;
-  top: 8px;
-  right: 10px;
-  width: fit-content;
-  height: fit-content;
-}
-
-.hi {
-  height: fit-content;
-  width: fit-content;
-  font-size: 100%;
-  color: black;
-  padding-top: 15%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 15%;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.hey1 {
-  border-bottom: 1px solid black;
-  color: black;
-  padding: 2%;
-}
-
-.hey2 {
-  color: black;
-  padding: 2%;
-}
-
-.hey1:hover {
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.hey2:hover {
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.no {
+.haha {
   border-bottom: 1px white;
+  background-color:  rgb(240, 240, 240);
 }
 
-.yes:hover {
+
+.device {
+  background-color:  rgb(255, 255, 255);
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  height: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+}
+
+
+.wifi {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  opacity: 0.5;
+  margin-right: 6px;
+}
+
+
+.deviceName {
+  margin-left: 25px;
+}
+
+.deviceIcon {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.device:hover {
   cursor: pointer;
   font-weight: bolder;
 }
 
-.saba {
+
+.navbar {
+  background-color: white;
+}
+
+
+.footer {
   visibility: visible;
-  height: 70px;
+  height: 55px;
+  background-color: white;
+  padding-bottom: 15px;
 }
 
-.gg {
-  height: 60px;
-  width: 60px;
-  margin-left: calc((100% - 60px)/2);
+.footitem {
+  height: 45px;
+  width: 45px;
+  margin-left: calc((100% - 45px)/2);
 }
 
 
-.gg:hover {
+.footitem:hover {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.homepage {
-  background-color: rgb(255, 38, 0);
-}
+
+
+
+
+
