@@ -1,15 +1,13 @@
 function onload() {
   document.getElementById("scenario").src = "images/" + "scenario" + "-orange.png";
   const start = localStorage.getItem('begin');
-  if (start == "home" || start == "smart" || start == "user") {
-    let el = document.getElementById("body");
-    el.classList.add('right');
-  }  else {
-    let el = document.getElementById("body");
-    el.classList.add('same')
-  }
+  let el = document.getElementById("body");
+  el.classList.add('right');
+  let el1 = document.getElementById("scene");
+  el1.classList.add('same');
   localStorage.clear();
   document.getElementById("body").style.visibility = "visible";
+  document.getElementById("scene").style.visibility = "visible";
 }
 
 

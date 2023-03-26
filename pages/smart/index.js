@@ -1,21 +1,13 @@
 function onload() {
   document.getElementById("smart").src = "images/" + "smart" + "-orange.png";
   const start = localStorage.getItem('begin');
-  if (start == "home") {
-    let el = document.getElementById("body");
-    el.classList.add('right');
-  } else if (start == "user") {
-    let el = document.getElementById("body");
-    el.classList.add('left')
-  } else if (start == "scenario") {
-    let el = document.getElementById("body");
-    el.classList.add('left')
-  } else {
-    let el = document.getElementById("body");
-    el.classList.add('same')
-  }
+  let el = document.getElementById("body");
+  el.classList.add('right');
+  let el1 = document.getElementById("scene");
+  el1.classList.add('same');
   localStorage.clear();
   document.getElementById("body").style.visibility = "visible";
+  document.getElementById("scene").style.visibility = "visible";
 }
 
 
